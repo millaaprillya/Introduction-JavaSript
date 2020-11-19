@@ -1,11 +1,14 @@
 //Taks 3
-// Membuat program yang memiliki satu variable
 
-function printSegitiga(x) {
+const x = 6;
+if (isNaN(x)) {
+  // >jika bukan angka
+  console.log("Type not require !! " + typeof x);
+} else {
   for (let i = 0; i < x; i++) {
-    for (j = 0; j < i; j++) {
-      console.log(i + "");
+    for (let j = 0; j < i; j++) {
+      process.stdout.write(i + ""); // menambahkan baris
     }
+    console.log();
   }
 }
-printSegitiga(6);

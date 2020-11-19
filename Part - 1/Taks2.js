@@ -1,6 +1,7 @@
 // Taks 2
-// Membuat program yang menghitung rata2 un
+// Membuat program yang menghitung rata2 nilai
 
+//---------------------------------------------//
 function nilaiPel(mtk, indo, inggris, ipa) {
   const jumlah = mtk + indo + inggris + ipa;
   const x = jumlah / 4;

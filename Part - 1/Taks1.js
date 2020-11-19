@@ -1,5 +1,5 @@
 // TAKS 1
-//1.  Membuat biodata dengan nama dan tipe data object
+//1.  Membuat biodata dengan nama dan tipe data object..
 
 //Name string
 const name = "Milla Aprillya";
