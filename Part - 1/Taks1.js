@@ -1,17 +1,12 @@
 // TAKS 1
 //1.  Membuat biodata dengan nama dan tipe data object..
+// dengan masing type of data nya
 
-//Name string
-const name = "Milla Aprillya";
-// age number
-const age = 19;
-//hobbies  array
-const hobbies = ["travelling", "listening music", "sleep"];
-// Is merried = boolean || true || false
-const merried = false;
-//SchoolList cek (Array of object)
-const schoolList = {
+const Biodata = {
   name: "Milla Aprillya",
+  age: 19,
+  hobby: ["Travelling", "Listeing Music", "Sleep"],
+  merried: false,
   school: [
     "School",
     { SDN: "SDN Pasirkaliki", yearOut: 2012 },
@@ -19,9 +14,6 @@ const schoolList = {
     { SMA: "SMK BPI Bandung", yearOUt: 2019 },
     { Major: "Teknik Informatika" },
   ],
-};
-
-const skills = {
   nameSkill: [
     "Skill",
     { javaScript: "Beginner" },
@@ -31,16 +23,4 @@ const skills = {
   InterestCoding: true,
 };
 
-//ouput
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof hobbies);
-console.log(typeof merried);
-
-//ouput School List
-console.log(typeof schoolList);
-console.log(schoolList);
-
-//ouput Skills
-console.log(typeof skills);
-console.log(skills);
+console.log(Biodata);

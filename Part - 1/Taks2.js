@@ -4,10 +4,12 @@
 //---------------------------------------------//
 function nilaiPel(mtk, indo, inggris, ipa) {
   const jumlah = mtk + indo + inggris + ipa;
+  // const n = jumlah.Math.ceil(jumlah);
+  // console.log(n);
   const x = jumlah / 4;
 
-  if (x == 0) {
-    console.log("Data tidak Boleh kosong");
+  if (isNaN(x)) {
+    console.log("Data harus berupa number");
   } else if (x >= 90) {
     console.log("Rata2 Nilai :" + x);
     console.log("Grade" + " " + "A");
@@ -21,6 +23,7 @@ function nilaiPel(mtk, indo, inggris, ipa) {
     console.log("Rata2 Nilai :" + x);
     console.log("Grade" + " " + "D");
   } else if (x <= 59) {
+    //------------------------------ jika grade nya kosong yah masuk ke grade E
     console.log("Rata2 Nilai :" + x);
     console.log("Grade" + " " + "E");
   } else {

@@ -1,13 +1,15 @@
 //Taks 3
+// Membuat Segitiga terbalik
 
-const x = 6;
+//const x = "enam"
+const x = 15;
 if (isNaN(x)) {
   // >jika bukan angka
-  console.log("Type not require !! " + typeof x);
+  console.log("Data harus angka  !! " + typeof x);
 } else {
-  for (let i = 0; i < x; i++) {
-    for (let j = 0; j < i; j++) {
-      process.stdout.write(i + ""); // menambahkan baris
+  for (i = 0; i < x; i++) {
+    for (j = i; j < x; j++) {
+      process.stdout.write(j + " "); // menambah baris baru
     }
     console.log();
   }
