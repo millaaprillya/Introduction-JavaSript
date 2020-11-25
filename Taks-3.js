@@ -6,7 +6,7 @@ const kelolaGaji = (gaji) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (!gaji || isNaN(gaji)) {
-        reject(new Erro("Data is null  & Data has number !"));
+        reject(new Error("Data is null  & Data has number !"));
       } else {
         const Hidup = gaji * 0.4;
         const investasi = gaji * 0.2;
@@ -70,14 +70,14 @@ const cekNilai = (indo, mtk, inggris, ipa) => {
     setTimeout(() => {
       const jumlah = (indo + mtk + inggris + ipa) / 4;
       const x = jumlah;
-      if (!indo || !mtk || !inggris || !ipa) {
+      if (!indo || !mtk || !inggris || (!ipa && isNaN(jumlah))) {
         reject(new Error("Data null & Data has number !"));
       } else {
         const predikat =
           x > 90
             ? "Grade A"
-            : x >= 80 && x <= 70
-            ? x + "Grade B"
+            : x >= 80 && x >= 70
+            ? x + " Grade B"
             : x >= 60 && x > 50
             ? x + " Grade C"
             : x + " Grade E";
