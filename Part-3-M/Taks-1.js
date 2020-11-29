@@ -1,3 +1,4 @@
+//sync
 const cekHariKerja = (day) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -23,13 +24,14 @@ cekHariKerja("senin")
     console.log(error);
   });
 
-const checkFunction = async (req, error) => {
+//async waiit
+const checkFunction = async (params, error) => {
   try {
-    const check = await cekHariKerja(req);
+    const check = await cekHariKerja(params);
     const cekDay = check[0].toUpperCase() + check.slice(1);
     console.log(cekDay + " " + "Hari Kerja");
   } catch (error) {
-    console.log(err);
+    console.log("Data tidak ada ");
   }
 };
-checkFunction("jumat");
+checkFunction("minggu");

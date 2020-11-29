@@ -1,6 +1,6 @@
 const getmonth = (callback) => {
   setTimeout(() => {
-    let error = false;
+    let error = true;
     let month = [
       "January",
       "Febuary",
@@ -17,13 +17,12 @@ const getmonth = (callback) => {
       "November",
       "Desember",
     ];
-    callback(error, month);
     if (!error) {
       callback(null, month);
     } else {
-      callback(new Error("Sorry data is not found, ", []));
+      callback(new Error("Sorry data is not found, "), []);
     }
-  }, 0);
+  }, 2000);
 };
 
 cekMonth = (err, month) => {

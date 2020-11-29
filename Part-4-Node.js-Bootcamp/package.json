@@ -1,0 +1,14 @@
+{
+  "name": "part-4-node.js-bootcamp",
+  "version": "1.0.0",
+  "description": "Project Learn ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milla",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
